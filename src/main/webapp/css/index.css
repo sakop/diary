@@ -5,11 +5,16 @@ form {
     width: 50%;
     margin: 10px auto;
     text-align: left;
-    line-height: 3em;
+    line-height: 2em;
     padding: 10px;
 }
 
-label {
+
+.attributeDiv{
+	#border:1px solid blue;
+}
+
+.attribute {
     display: inline-block;
     width: 6.1em;
     margin-left: 2em;
@@ -27,6 +32,17 @@ input:hover {
     text-align: center;
     margin-top: 10px;
 }
+
+.errorMsg{
+	font-size:.5em;
+	color:red;
+	display:block;
+	padding:0;
+	margin:0;
+	line-height: 2em;
+	text-align:center;
+}
+
 
 #submit a {
     text-decoration: none;
