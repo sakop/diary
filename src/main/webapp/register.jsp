@@ -21,13 +21,13 @@
 
 		<form id="register_form" action="diary_list.do">
 
-			<label>Email</label><input type="text" />
-			 <label>Username</label><input	type="text" />
-			 <label>Password</label><input type="password" />
-			<label>Password2</label><input type="password" />
-			<div id="submit">
-				<a href="#">submit</a>
-			</div>
+
+			<label>Email</label><input type="email" name="email" placeholder="name@domain.com" required/>
+			<label>Username</label><input placeholder="aic" type="text"  name="username" value="${username}" required/>
+			<label>Password</label><input type="password" name="password" required/>
+			<label>Password2</label><input type="password" name="password2" required/>
+			<input type="submit" style="display: block;margin:0 auto"/>
+
 
 		</form>
 	</section>
