@@ -35,13 +35,13 @@
 
 		<form id="register_form" action="register.do" method="post">
 
-			<label>Email</label><input type="text" name="email"/>
+			<label>Email</label><input type="email" name="email"/>
 			<label>Username</label><input type="text" name="username"/>
 			<label>Password</label><input type="password" name="password"/>
 			<label>Password2</label><input type="password" name="p2"/>
-			<div id="submit">
-				<a href="#">submit</a>
-			</div>
+			<button id="submit">
+				submit
+			</button>
 
 		</form>
 	</section>

@@ -61,7 +61,7 @@ nav ul li:FIRST-CHILD {
     width: 80%;
     margin: 0px auto;
     text-align: center;
-    height: 600px;
+    min-height: 600px;
     position: relative;
     top: 50px;
 }
