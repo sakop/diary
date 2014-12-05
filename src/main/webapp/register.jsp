@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -18,13 +19,26 @@
 	<jsp:include page="header.jsp"/>
 	<section class="mainBlock">
 		<h1>AIC Diary</h1>
+		
+		<c:choose>
+			<c:when test="${error != null}">
+				<div class="error_msg">
+					${error}
+				</div>
+			</c:when>
+			<c:otherwise>
+				<div class="error_msg">
+					No error!!
+				</div>
+			</c:otherwise>
+		</c:choose>
 
-		<form id="register_form" action="diary_list.do">
+		<form id="register_form" action="register.do" method="post">
 
-			<label>Email</label><input type="text" />
-			 <label>Username</label><input	type="text" />
-			 <label>Password</label><input type="password" />
-			<label>Password2</label><input type="password" />
+			<label>Email</label><input type="text" name="email"/>
+			<label>Username</label><input type="text" name="username"/>
+			<label>Password</label><input type="password" name="password"/>
+			<label>Password2</label><input type="password" name="p2"/>
 			<div id="submit">
 				<a href="#">submit</a>
 			</div>
