@@ -17,7 +17,7 @@ public class RegisterAction extends JspDispatcher {
 		String email = req.getParameter("email");
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
-		String p2 = req.getParameter("p2");
+		String p2 = req.getParameter("password2");
 
 		if (isNotEmpty(username) && isNotEmpty(password)
 				&& isNotEmpty(email) && isNotEmpty(p2)) {

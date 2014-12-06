@@ -26,5 +26,4 @@
 	    <servlet-class>controller.JspDispatcher</servlet-class>
 	</servlet>
 
-
 </web-app>

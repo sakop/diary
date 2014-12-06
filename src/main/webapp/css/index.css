@@ -16,6 +16,8 @@ label {
 
 input {
 	padding: 5px;
+	position: relative;
+	top: -5px;
 }
 
 input:hover {
@@ -25,6 +27,7 @@ input:hover {
 #submit {
 	text-align: center;
 	margin-top: 10px;
+<<<<<<< HEAD
 }
 
 #submit {
@@ -45,6 +48,25 @@ input:hover {
 }
 
 #submit:hover {
+=======
+}
+
+#submit a {
+	text-decoration: none;
+	border: 1px solid gray;
+	padding: 10px 15px;
+	border-radius: 10px;
+	font-size: 1.5em;
+	background: rgba(210, 100, 232, .1);
+	background-image: url("img/yes.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 40%;
+	padding-left: 50px;
+	background-position: 5px 50%;
+}
+
+#submit a:hover {
+>>>>>>> master
 	color: white;
 	background: rgba(255, 0, 0, .1);
 	background-image: url("img/yes.jpg");

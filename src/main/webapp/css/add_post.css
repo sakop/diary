@@ -1,0 +1,53 @@
+.post_diary {
+	margin-top: 0px;
+	padding-top:0px;
+}
+
+form {
+	margin: 0px auto;
+	text-align: left;
+	padding: 10px;
+	width:70%;
+}
+
+label {
+	display: inline-block;
+	width: 3em;
+}
+
+input {
+	padding: 5px;
+	display: inline-block;
+	position: relative;
+	top: -5px;
+}
+
+.notice {
+	color: rgba(255, 255, 0, .7);
+	margin-bottom: 10px;
+}
+
+.content{
+	margin-top:10px;	
+}
+
+.mainBlock{
+	top:0px;
+	padding:5px;
+	margin-top:10px;
+}
+
+.post_diary_form{
+	margin-left:10%;
+}
+
+textarea{
+	display: inline-block;
+	font-size: .8em;
+	background-image: url("img/diary_background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-color: #ffffff;
+	opacity:0.8;
+}
+
