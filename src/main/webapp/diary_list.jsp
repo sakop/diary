@@ -23,7 +23,7 @@
 		<section class="person_info">
 			<h4 class="author_name">AIC空间</h4>
 			<img class="person_image" src="pic/mayun.jpg" />
-			<a class="addNewDiary" href="addDiary.do">+Post</a>
+			<a class="addNewDiary" href="add_post.do">+Post</a>
 		</section>
 		<section class="article_container">
 			<h3 class="title">问题</h3>
