@@ -12,4 +12,8 @@ public class PersonService {
 	public int savePerson(Person p) throws SQLException{
 		return dao.savePerson(p);
 	}
+
+	public Person authenticateUser(String username,String password) throws SQLException {
+		return dao.authenticateUser(username,password);
+	}
 }

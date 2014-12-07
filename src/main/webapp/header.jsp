@@ -1,7 +1,7 @@
 <nav class="float_container">
 	<ul>
-		<li>Map</li>
-		<li>History</li>
+		<li id="loginLink"><a href="login.do">Login</a></li>
+		<li><a href="register.do">Register</a></li>
 		<li>More about us</li>
 		<li>Contact us</li>
 	</ul>

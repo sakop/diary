@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -19,35 +19,26 @@
 	<jsp:include page="header.jsp"/>
 	<section class="mainBlock">
 		<h1>AIC Diary</h1>
-		<!-- 
-		<div><%=request.getAttribute("welcome")%></div>
-		<div>${requestScope.welcome}</div>
-		<div>${welcome}</div>
-		 -->
-		 
+		
 		<c:choose>
 			<c:when test="${error != null}">
-				<div class="error_msg">
-					${error}
-				</div>
+				<div class="errorMsg">${error}</div>				
 			</c:when>
 			<c:otherwise>
-				<div class="error_msg">
-					No error!!
-				</div>
+				<div>No error</div>
 			</c:otherwise>
-		</c:choose>
+		</c:choose>		
 
-		<form id="register_form" action="register.do" method="post">
+		<form id="login_form" action="login.do" method="post">
 
-
-			<label>Email</label><input type="email" name="email" placeholder="name@domain.com" required/>
-			<label>Username</label><input placeholder="aic" type="text"  name="username" value="${username}" required/>
+			<label>Username</label><input type="text" name="username" value="${username}"/>
 			<label>Password</label><input type="password" name="password"/>
-			<label>Password2</label><input type="password" name="password2" required/>
 			<input type="submit" style="display: block;margin:0 auto"/>
-
-
+			<!--  
+			<div id="submit">
+				<a href="#">submit</a>
+			</div>
+-->
 		</form>
 	</section>
 	<footer>
